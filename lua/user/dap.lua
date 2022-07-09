@@ -13,10 +13,20 @@ if not dap_install_status_ok then
   return
 end
 
-dap_install.setup {}
+--dap_install.setup {}
 
-dap_install.config("python", {})
+--dap_install.config("python", {})
 -- add other configs here
+
+require('dap-python').setup('/Users/spencer/.pyenv/versions/3.9.2/bin/python')
+
+
+--local dap_status_ok, dap = pcall(require, "dap")
+--dap.adapters.python = {
+-- type = 'executable';
+-- command = '/Users/spencer/.pyenv/versions/3.9.2/bin/python';
+-- args = { '-m', 'debugpy.adapter' };
+--}
 
 dapui.setup {
   sidebar = {
