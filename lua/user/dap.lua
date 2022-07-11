@@ -29,7 +29,7 @@ require('dap-python').setup('/Users/spencer/.pyenv/versions/3.9.2/bin/python')
 --}
 
 dapui.setup {
-  sidebar = {
+--[[  sidebar = {
     elements = {
       {
         id = "scopes",
@@ -43,6 +43,7 @@ dapui.setup {
   tray = {
     elements = {},
   },
+  --]]
 }
 
 vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DiagnosticSignError", linehl = "", numhl = "" })
