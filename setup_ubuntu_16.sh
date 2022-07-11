@@ -17,10 +17,14 @@ sudo apt install cmake
 sudo apt-get install gettext
 sudo apt install xsel # for X11
 sudo apt install wl-clipboard # for wayland
-sudo apt install npm #old version of npm (maybe a problem, maybe not)
+# install node and npm
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo npm i -g neovim
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
+sudo curl -LO https://github.com/sharkdp/fd/releases/download/v8.4.0/fd-musl_8.4.0_amd64.deb
+sudo dpkg -i fd_8.4.0_amd64.deb
 
 make CMAKE_BUILD_TYPE=Release
 sudo make install
@@ -28,4 +32,7 @@ sudo make install
 #need to switch to cluster
 # pip install pynvim
 # pip install pyright
+# pip install black
+# pip install flake8
 
+# you have to install the lsp via the :lspinstall thing
