@@ -1,0 +1,5 @@
+pynvim
+pyright
+black
+flake8
+debugpy

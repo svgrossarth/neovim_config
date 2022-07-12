@@ -1,3 +1,10 @@
+# Spencer's steps
+1. Switch to `cluster` user: `sudo su cluster`
+2. Pull down this repo: `git clone git@github.com:svgrossarth/neovim_config.git ~/.config/nvim`
+3. Switch back to `ssm` user for `sudo`: `exit`
+4. `cd /home/cluster/.config/nvim`
+5. Add execution to the script: `sudo chmod +x setup_ubuntu_16.sh`
+
 # A Basic Stable IDE config for Neovim
 
 > Why does this repo exist?
