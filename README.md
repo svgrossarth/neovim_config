@@ -4,6 +4,13 @@
 3. Switch back to `ssm` user for `sudo`: `exit`
 4. `cd /home/cluster/.config/nvim`
 5. Add execution to the script: `sudo chmod +x setup_ubuntu_16.sh`
+6. Execute script: `./setup_ubuntu_16.sh`
+7. Switch back to cluster user: `sudo su cluster`
+8. Install needed python dependencies: `pip install -r requirements.txt`
+9. Run nvim: `nvim` you will see many failures
+10. Run nvim again: `nvim` should look different, exit
+12. Update the python path at the end of `init.lua` to match the path where things have been installed
+11. In nvim run: `:checkhealth` things should look good in general
 
 # A Basic Stable IDE config for Neovim
 
