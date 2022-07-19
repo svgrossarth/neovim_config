@@ -18,8 +18,12 @@ end
 --dap_install.config("python", {})
 -- add other configs here
 
-require('dap-python').setup('/Users/spencer/.pyenv/versions/nvim_testing/bin/python')
-
+local dap_python_status_ok, dap_python = pcall(require, "dap-python")
+if not dap_python_status_ok then
+  return
+end
+dap_python.setup("/Users/spencer/.pyenv/versions/3.9.2/bin/python")
+--dap_python.test_runner = 'pytest'
 
 --local dap_status_ok, dap = pcall(require, "dap")
 --dap.adapters.python = {
