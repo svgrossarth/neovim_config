@@ -4,7 +4,7 @@ git clone https://github.com/neovim/neovim.git /tmp/neovim
 cd /tmp/neovim
 git checkout release-0.7
 # dependencies needed to install neovim
-sudo apt-get install -y pkg-config libtool-bin m4 automake
+sudo apt-get install pkg-config libtool-bin m4 automake -y
 
 
 
@@ -13,7 +13,7 @@ sudo apt purge --auto-remove cmake
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
 sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
 sudo apt update
-sudo apt-get install -y cmake gettext xsel wl-clipboard
+sudo apt-get install cmake gettext xsel -y 
 
 # install node and npm
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
